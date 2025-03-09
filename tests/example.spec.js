@@ -8,6 +8,7 @@ const projectRootUrl = `http://localhost:${liveServerPort}/`;
 const reviewsBackgroundImagePath = `url("${projectRootUrl}assets/backgrounds/review-bg.png")`;
 
 test.beforeEach('Run the Main Page', async ({ page }) => {
+  console.log("Project URL: ", projectRootUrl);
   await page.goto(projectRootUrl);
 });
 
